@@ -32,3 +32,11 @@ is maintained by the W3C.
 @import "1.png"
 
 ![test](./1.png)
+
+'''
+git config --global user.name hhwowen
+git remote add origin git@github.com:hhwowen/yourRepo.git
+git add .
+git commit -m 'commit new'
+git push origin master
+'''
