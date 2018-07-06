@@ -367,7 +367,7 @@ cell clipping的操作是针对unit输出的值的，和gradient clipping clip�
       c = clip_ops.clip_by_value(c, -self._cell_clip, self._cell_clip)
 ```
 
-Peephole的操作是在计算输入门和遗忘门时，将[x(t),cell state(t-1),hidden state(t-1)]连接到一起当做输入，计算输出门时[x(t),cell state(t),hidden state(t-1)]作为输入进行计算，而BasicLSTMCell只是将[x(t),hidden state(t-1)]连接在一起，从不考虑cell state，peephole　（猫眼）　瞄一下上一时刻想要的cell state是多少，再确定这一时刻的想要的输入和遗忘（门控），很形象。
+Peephole的操作是在计算输入门和遗忘门时，将[x(t),cell state(t-1),hidden state(t-1)]连接到一起当做输入，计算输出门时[x(t),cell state(t),hidden state(t-1)]作为输入进行计算，而BasicLSTMCell只是将[x(t),hidden state(t-1)]连接在一起，从不考虑cell state，peephole　（猫眼）　瞄一下上一时刻想要的cell state是多少，再确定这一时刻的想要的输入和遗忘（门控），很形象。  
 ![LSTMCellformula](./pic/lstmformula.png)
 
 ### GRUCell
