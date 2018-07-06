@@ -2,6 +2,15 @@
 
 ## 概述
 
+
+
+该rnn_cell api 来源于[rnn_cell_impl.py](https://www.github.com/tensorflow/tensorflow/blob/master/tensorflow/python/ops/rnn_cell_impl.py)  [官网RNN and Cells介绍](https://www.tensorflow.org/versions/master/api_guides/python/contrib.rnn)
+
+讲述的是rnn_cell的构造。
+
+
+
+
 ```python
 """Module implementing RNN Cells.
 
@@ -12,10 +21,7 @@ Constructing multi-layer cells is supported by the class `MultiRNNCell`, or by
 calling the `rnn` ops several times.
 """
 ```
-
-该rnn_cell的api来源于[rnn_cell_impl.py](https://www.github.com/tensorflow/tensorflow/blob/master/tensorflow/python/ops/rnn_cell_impl.py)   讲述的是rnn_cell的构造
-
-[官网RNN and Cells介绍](https://www.tensorflow.org/versions/master/api_guides/python/contrib.rnn)
+RNNCell是所有cell的父类，LayerRNNCell的设计是为了方便参数的管理，其他的cell和wrapper等结构均是根据具体论文和相关应用场景设计实现的。
 
 rnn_cell的继承关系：
 > RNNCell(tf.layers.Layer)
@@ -461,7 +467,7 @@ class DropoutWrapper(RNNCell):
 
 ### ResidualWrapper
 
-实在不动了，和dropoutwrapper类似
+实在看不动了，和dropoutwrapper类似
 
 ---
 
