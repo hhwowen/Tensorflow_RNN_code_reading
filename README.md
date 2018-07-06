@@ -5,4 +5,7 @@ tf.nn.raw_rnn真的好用
 Tensorflow rnn_cell api 阅读笔记.md
 ## 待完成
 其他
+<<<<<<< HEAD
 
+=======
+>>>>>>> 029bfc4ab2d6ff537144997d52e9b635d8252e03
